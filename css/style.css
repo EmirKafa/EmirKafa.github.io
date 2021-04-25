@@ -1,0 +1,904 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: #1A191E;
+    overflow-x: hidden;
+    
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    flex-basis: auto;
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99999;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 50px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 30px;
+}
+
+.mobile-nav-burger-hide {
+    display: none;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.cl-effect-5 a {
+	overflow: hidden;
+	padding: 0 4px;
+	height: 1em;
+}
+
+.cl-effect-5 a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cl-effect-5 a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.cl-effect-5 a:hover span,
+.cl-effect-5 a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+@media only screen and (max-width: 1199px) {
+    .nav ul li {
+        display: none;
+    }
+
+    .mobile-nav-burger-hide {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    background-color: #1A191E;
+    transition: 0.5s ease-in-out;
+}
+
+.close-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.mobile-nav div {
+    margin: 20px;
+}
+
+.mobile-nav div a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -70px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/haarstudioaussergewoehnlich+köln+slider.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.slider-inner h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.slider-inner a {
+    padding: 20px 100px;
+    border: solid 2px;
+    border-color: #fff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.slider-inner a:hover {
+    background-color: #fff;
+    color: #1A191E;
+}
+
+.newsha-popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9999;
+}
+
+.newsha-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    width: 600px;
+    height: 400px;
+    background-color: #1A191E;
+    z-index: 999999;
+}
+
+.newsha-popup-img-container {
+    width: 100%;
+    height: auto;
+}
+
+.newsha-popup img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.popup-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 0.0s;
+    transform: translate(-50%, -50%) scale(0.4);
+}
+
+.options-menu-newsha {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.options-menu-newsha a {
+    padding: 20px 40px;
+    border: solid 2px #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 20px;
+}
+
+.options-menu-newsha a:hover {
+    background-color: #fff;
+    color: #1A191E;
+}
+
+.newsha-popup-img-container span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 40px;
+    color: #1A191E;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.service {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+.service h1 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.services {
+    display: flex !important;
+}
+
+.service-container {
+    width: 300px !important;
+    min-height: 380px!important;
+    height: auto;
+    margin: 20px 100px !important;
+    border: solid 3px;
+    border-color: #fff;
+}
+
+@media only screen and (max-width: 668px) {
+    .service-container {
+        margin: 20px 20px !important;
+        
+    }
+
+    .button-container img {
+        width: 20px;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 468px) {
+    .service-container {
+        margin: 20px 20px !important;
+        width: 240px !important;
+        min-height: 380px;
+        height: auto;
+        font-size: 10px;
+    }
+
+    .button-container img {
+        width: 20px;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 472px) {
+    .services {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+.service h1 {
+    margin-top: 20px;
+}
+
+.service-container h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.service-container-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.service-container h3 {
+    margin-top: 20px;
+
+}
+
+.service-container-inner div:first-child {
+    margin-left: 20px;
+}
+
+.service-container-inner div:last-child {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.philosophy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-image: url("../images/haarstudioaussergewoehnlich+köln-section3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.philosophy p {
+    margin-top: 20px;
+    width: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 3px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 592px) {
+    .philosophy p {
+        width: 80%;
+        height: auto;
+        margin: 20px 10%;
+        font-size: 15px;
+    }
+}
+
+.equipment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+    min-height: 100vh;
+    height: auto;
+}
+
+.equipment-inner {
+    margin: 30px;
+}
+
+.equipment div h1 {
+    margin-left: 30px;
+}
+
+.equipment div p {
+    width: 400px;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 1217px) {
+    .equipment {
+        flex-direction: column-reverse;
+    }
+
+    .equipment-img {
+        width: 90%;
+        height: auto;
+        margin: 20px 5%;
+
+    }
+
+    .equipment-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .equipment-inner {
+        width: 90%;
+        margin: 20px 5%;
+        text-align: center;
+    }
+
+    .equipment-inner h1 {
+        width: 100%;
+        font-size: 25px;
+        margin-left: 0 !important;
+    }
+
+    .equipment-inner p {
+        width: 100% !important;
+        margin-top: 20px;
+        font-size: 5px;
+        margin-left: 0 !important;
+        text-align: left;
+    }
+}
+
+.opening-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/haarstudioaussergewoehnlich+köln+öffnungszeiten.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opening-time .days {
+    width: 400px;
+    height: 500px;
+    
+}
+
+.opening-time .days h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.opening-time .days .day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    border-bottom: solid 2px;
+    border-color: #fff;
+}
+
+
+.gallery {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    margin: 50px 0;
+}
+
+.gallery h1 {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#splide {
+    margin: 0 10%;
+}
+
+
+#splide img {
+	width : auto !important;
+	height: auto;
+}
+
+#splide-salon {
+    margin: 0 10%;
+}
+
+.approach {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/haarstudioaussergewoehnlich+koeln+anfahrt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.approach div {
+    margin: 20px;
+}
+
+.google-maps {
+    width: 700px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 1055px) {
+    .approach {
+        flex-direction: column;
+
+    }
+}
+
+@media only screen and (max-width: 748px) {
+    .google-maps {
+        width: 80% !important;
+        margin: 20px 10% !important;
+    }
+}
+
+.newsha-section {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    margin: 0 15%;
+}
+
+.newsha-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.newsha-container h2 {
+    width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.newsha-section .newsha-container a:last-child {
+    margin-top: 20px;
+    position: relative;
+    padding: 20px 60px;
+    border: solid 2px #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.newsha-section .newsha-container a:last-child:hover {
+    background-color: #fff;
+    color: #1A191E;
+}
+
+@media only screen and (max-width: 1489px) {
+    .newsha-section {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 1294px) {
+    .newsha-section {
+        flex-direction: column;
+    }
+
+    .newsha-section .newsha-container {
+        width: 90%;
+        height: auto;
+        margin: 0 5;
+    }
+
+    .newsha-section .newsha-container h1 {
+        font-size: 10vw;
+    }
+
+    .newsha-section .newsha-container h2 {
+        font-size: 5vw;
+    }
+
+    .newsha-section .newsha-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .newsha-section .newsha-container a:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        width: 100%;
+        height: 60px;
+        padding: 0;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .newsha-section .newsha-container h1 {
+        font-size: 6vw;
+    }
+
+    .newsha-section .newsha-container h2 {
+        font-size: 3vw;
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-image: url("../images/haarstudioaussergewoehnlich+koeln+kontakt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact .questions-container {
+    width: 350px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact .questions-container h2 {
+    margin-right: 30px;
+}
+
+.contact form input {
+    width: 377px;
+    height: 30px;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px #fff;
+    color: #ffF;
+    outline: none;
+    padding: 0 10px;
+}
+
+.contact form textarea {
+    width: 378px;
+    height: 200px;
+    resize: vertical;
+    max-height: 300px;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px #fff;
+    color: #ffF;
+    outline: none;
+    padding: 10px;
+}
+
+.contact form button {
+    width: 400px;
+    height: 40px;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px #fff;
+    color: #ffF;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #fff;
+    color: #1A191E;
+}
+
+.contact form .name-and-lastname-container {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+  }
+
+.name-and-lastname-container input {
+    width: 170px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px #fff;
+    color: #ffF;
+    outline: none;
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 783px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact .questions-container {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 434px) {
+
+    .questions-container h2 {
+        text-align: center;
+        margin-right: 0px !important;
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+    
+    .form {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .form form{
+        width: 100%;
+    }
+
+    .form form input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .name-and-lastname-container {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .name-and-lastname-container input {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .form form textarea {
+        width: 100%;
+    }
+
+    .form form button {
+        width: 108%;
+        height: 40px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    background-color: #282828;
+}
+
+.footer .footer-content-left {
+    width: 330px;
+    margin-left: 50px;
+}
+
+.footer .footer-content-left p {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer .footer-content-left div {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer .footer-content-right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 400px;
+
+}
+
+.footer .footer-content-right .footer-content-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+
+.footer .footer-content-right .footer-content-inner .img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footer .footer-content-right .footer-content-inner .img-container img {
+    margin: 0 10px;
+    object-fit: contain;
+}
+
+.footer .footer-content-right .footer-content-inner .shop-newsha img {
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+
+.footer .footer-content-right .footer-content-inner-imprint {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer .footer-content-right .footer-content-inner-imprint a {
+    margin: 20px;
+}
+
+.imprint-popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9999;
+}
+
+.imprint-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    width: 700px;
+    min-height: 500px;
+    height: auto;
+    background-color: #1A191E;
+    z-index: 999999;
+    text-align: left;
+    padding: 30px;
+}
+
+.privacy-policy-popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9999;
+}
+
+.privacy-policy-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    width: 700px;
+    min-height: 500px;
+    overflow-y: scroll;
+    background-color: #1A191E;
+    z-index: 999999;
+    text-align: left;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 667px) {
+    .footer {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}
