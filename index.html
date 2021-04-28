@@ -20,8 +20,8 @@
 </head>
 
 <body onload="showPopUp()">
-    <div class="nav">
-        <div class="left-menu//">
+     <div class="nav">
+        <div class="left-menu">
             <ul>
                 <li class="cl-effect-5"><a href="#service"><span>Unser Service</span></a></li>
                 <li class="cl-effect-5"><a href="#opening-time"><span>Öffnungszeiten</span></a></li>
@@ -40,21 +40,21 @@
             <img src="images/outline_menu_white_24dp.png">
         </div>
     </div>
-    <div class="mobile-nav">
+     <div class="mobile-nav">
         <span onclick="closeSidebar()" class="material-icons close-icon">close</span>
-        <div><a href="#">Unser Service</a></div>
-        <div><a href="#">Öffnungszeiten</a></div>
-        <div><a href="#">Galerie</a></div>
-        <div><a href="#">Kontakt</a></div>
+        <div onclick="closeSidebar()" class="menu-links"><a href="#service">Unser Service</a></div>
+        <div onclick="closeSidebar()" class="menu-links"><a href="#opening-time">Öffnungszeiten</a></div>
+        <div onclick="closeSidebar()" class="menu-links"><a href="#gallery">Galerie</a></div>
+        <div onclick="closeSidebar()" class="menu-links"><a href="#contakt">Kontakt</a></div>
     </div>
-    <div class="slider">
-        <div class="slider-inner">
+     <div class="landing">
+        <div class="landing-inner">
             <h1>Außergewöhnlich</h1>
             <h1>so wie unser Haarstudio</h1>
             <a href="tel:+4922116917854">Jetzt Anrufen</a>
         </div>
 
-        <div class="hidden newsha-popup-background popup-hidden"></div>
+         <div class="hidden newsha-popup-background popup-hidden"></div>
         <div class="newsha-popup popup-hidden">
 
             <div class="newsha-popup-img-container">
@@ -67,151 +67,159 @@
                 <p>Kaufe absofort Newsha-Produkte bei uns!</p>
                 <a href="https://www.newsha.de/shoppartner/25041">Jetzt bestellen</a>
             </div>
-        </div>
-
+        </div> 
     </div>
-    <div class="service" id="service">
+
+     <div class="service" id="service">
         <h1>Unser Service</h1>
         <div class="services">
-            <div class="service-container multiple-item">
-                <h3>Damen</h3>
-                <div class="service-container-inner">
-                    <div>&bull; Trocken schneiden</div>
-                    <div>22€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Waschen, schneiden, selber föhnen</div>
-                    <div>25€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Waschen, schneiden, föhnen</div>
-                    <div>ab 35€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Waschen, föhnen, legen</div>
-                    <div>ab 18€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Dauerwelle + waschen, schneiden, föhnen</div>
-                    <div>ab 62€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Dauerhafte Haarglättung inkl. waschen, schneiden, föhnen</div>
-                    <div>ab 98€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Splisshaarschnitt</div>
-                    <div>ab 30€</div>
-                </div>
-            </div>
-            <div class="service-container">
-                <h3>Farbe/Strähnen</h3>
-                <div class="service-container-inner">
-                    <div>&bull; Ansatz Farbe</div>
-                    <div>29€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Tönung/Mattierung</div>
-                    <div>29€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Neue Farbe</div>
-                    <div>44€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Elumen</div>
-                    <div>38€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Foliensträhnen Oberkopf</div>
-                    <div>42€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Foliensträhnen komplett</div>
-                    <div>80€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Paintings</div>
-                    <div>49€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Highlites</div>
-                    <div>10€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Balayage</div>
-                    <div>ab 110€</div>
-                </div>
-            </div>
-            <div class="service-container">
-                <h3>Herren</h3>
-                <div class="service-container-inner">
-                    <div>&bull; Schneiden</div>
-                    <div>18€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Waschen, schneiden föhnen</div>
-                    <div>20€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Opa's Kränzchen</div>
-                    <div>10€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Rentner Schnitt</div>
-                    <div>15€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Rasieren</div>
-                    <div>12€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Messerhaarschnitt</div>
-                    <div>23€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Messerhaarschnitt, waschen, föhnen</div>
-                    <div>25€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Messer Seitenhaarschnitt</div>
-                    <div>16€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Seiten Haarschnitt</div>
-                    <div>13€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Kinder bis 12 Jahre</div>
-                    <div>10€</div>
-                </div>
-            </div>
-            <div class="service-container">
-                <h3>Kosmetik</h3>
-                <div class="service-container-inner">
-                    <div>&bull; Wimpern färben</div>
-                    <div>10€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Augenbrauen färben</div>
-                    <div>6€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Augenbrauen zupfen</div>
-                    <div>8€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Haarkur</div>
-                    <div>7€</div>
-                </div>
-                <div class="service-container-inner">
-                    <div>&bull; Make- Up oder Hochsteckfrisur</div>
-                    <div>ab 40€</div>
+            <div id="splide-service">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide service-container">
+                                <h3>Damen</h3>
+                                <div class="service-container-inner">
+                                    <div>&bull; Trocken schneiden</div>
+                                    <div>22€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Waschen, schneiden, selber föhnen</div>
+                                    <div>25€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Waschen, schneiden, föhnen</div>
+                                    <div>ab 35€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Waschen, föhnen, legen</div>
+                                    <div>ab 18€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Dauerwelle + waschen, schneiden, föhnen</div>
+                                    <div>ab 62€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Dauerhafte Haarglättung inkl. waschen, schneiden, föhnen</div>
+                                    <div>ab 98€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Splisshaarschnitt</div>
+                                    <div>ab 30€</div>
+                                </div>
+                        </li>
+                        <li class="splide__slide service-container">
+                            
+                                <h3>Farbe/Strähnen</h3>
+                                <div class="service-container-inner">
+                                    <div>&bull; Ansatz Farbe</div>
+                                    <div>29€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Tönung/Mattierung</div>
+                                    <div>29€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Neue Farbe</div>
+                                    <div>44€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Elumen</div>
+                                    <div>38€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Foliensträhnen Oberkopf</div>
+                                    <div>42€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Foliensträhnen komplett</div>
+                                    <div>80€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Paintings</div>
+                                    <div>49€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Highlites</div>
+                                    <div>10€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Balayage</div>
+                                    <div>ab 110€</div>
+                                </div>
+                            
+                        </li>
+                        <li class="splide__slide service-container">
+                            <h3>Herren</h3>
+                            <div class="service-container-inner">
+                                <div>&bull; Schneiden</div>
+                                <div>18€</div>
+                            </div>
+                            <div class="service-container-inner">
+                                <div>&bull; Waschen, schneiden föhnen</div>
+                                <div>20€</div>
+                            </div>
+                            <div class="service-container-inner">
+                                <div>&bull; Opa's Kränzchen</div>
+                                <div>10€</div>
+                            </div>
+                            <div class="service-container-inner">
+                                <div>&bull; Rentner Schnitt</div>
+                                <div>15€</div>
+                            </div>
+                            <div class="service-container-inner">
+                                <div>&bull; Rasieren</div>
+                                <div>12€</div>
+                            </div>
+                            <div class="service-container-inner">
+                                <div>&bull; Messerhaarschnitt</div>
+                                <div>23€</div>
+                            </div>
+                            <div class="service-container-inner">
+                                <div>&bull; Messerhaarschnitt, waschen, föhnen</div>
+                                <div>25€</div>
+                            </div>
+                            <div class="service-container-inner">
+                                <div>&bull; Messer Seitenhaarschnitt</div>
+                                <div>16€</div>
+                            </div>
+                            <div class="service-container-inner">
+                                <div>&bull; Seiten Haarschnitt</div>
+                                <div>13€</div>
+                            </div>
+                            <div class="service-container-inner">
+                                <div>&bull; Kinder bis 12 Jahre</div>
+                                <div>10€</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide service-container">
+                                <h3>Kosmetik</h3>
+                                <div class="service-container-inner">
+                                    <div>&bull; Wimpern färben</div>
+                                    <div>10€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Augenbrauen färben</div>
+                                    <div>6€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Augenbrauen zupfen</div>
+                                    <div>8€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Haarkur</div>
+                                    <div>7€</div>
+                                </div>
+                                <div class="service-container-inner">
+                                    <div>&bull; Make- Up oder Hochsteckfrisur</div>
+                                    <div>ab 40€</div>
+                                </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="philosophy">
+    </div>  
+     <div class="philosophy">
         <h1>Philosophie</h1>
         <p>Das Friseurhandwerk ist eine Leidenschaft, die wir Tag für Tag leben.
 
@@ -228,8 +236,8 @@
             Vereinbaren Sie schon heute einen Termin mit Hilfe des Kontaktformulars oder rufen Sie uns direkt an.
 
             Wir freuen uns auf Sie.</p>
-    </div>
-    <div class="equipment">
+    </div> 
+     <div class="equipment">
         <div class="equipment-inner">
             <h1>Hochwertige Ausstattung</h1>
             <p>Ihr Komfort und Ihre Zufriedenheit steht bei uns an oberster Stelle! In unserem Haarstudio, können
@@ -238,8 +246,8 @@
         </div>
         <div class="equipment-img equipment-inner"><img src="images/haarstudioaussergewoehnlich+koeln+ausstattung.png">
         </div>
-    </div>
-    <div class="opening-time" id="opening-time">
+    </div> 
+     <div class="opening-time" id="opening-time">
 
         <div class="days">
             <h1>Öffnungszeiten</h1>
@@ -268,8 +276,8 @@
                 <div>9:00 - 16:00</div>
             </div>
         </div>
-    </div>
-    <div class="gallery" id="gallery">
+    </div> 
+     <div class="gallery" id="gallery">
 
         <h1>Salon</h1>
 
@@ -481,8 +489,8 @@
             </div>
         </div>
 
-    </div>
-    <div class="approach">
+    </div> 
+     <div class="approach">
         <div>
             <h2>Hier finden Sie uns</h3>
                 <h3>Longericher Hauptstr. 68
@@ -502,8 +510,8 @@
                 }
             </style>
         </div><br />
-    </div>
-    <div class="newsha-section">
+    </div> 
+     <div class="newsha-section">
         <div class="newsha-container">
             <img src="images/haarstudioaussergewoehnlich+koeln+newsha.png">
         </div>
@@ -512,8 +520,8 @@
             <h2>Bestelle deine Newsha Produkte absofort bei uns</h2>
             <a href="https://www.newsha.de/shoppartner/25041">Jetzt bestellen</a>
         </div>
-    </div>
-    <div class="contact" id="contact">
+    </div> 
+     <div class="contact" id="contact">
         <div class="questions-container">
             <h2>Sie haben Fragen?</h2>
             <h2>Wir sind gerne bereit Ihnen weiterzuhelfen. Kontaktieren Sie uns über das Formular, oder rufen Sie
@@ -529,11 +537,21 @@
             </form>
         </div>
     </div>
-
-    <div class="footer">
+    <div class="mobile-footer">
+    <div><p>Zahlungsarten</p></div>
+    <div><img src="images/payment/haarstudioaussergewoehnlich+köln+zahlungsarten.png"></div>
+    <div><p>&copy; Haarstudio Aussergewoehnlich 2021</p></div>
+    <div class="socials-mobile"><img draggable="false" src="images/socialmedia/facebook.png">
+        <img draggable="false" src="images/socialmedia/instagram.png"></div>
+    <div><p>Shoppen auf</p></div>
+    <div><a href="https://www.newsha.de/shoppartner/25041"><img src="images/newsha/newsha-logo.png"></a></div>
+    <div onclick="showImprintPopUp()"><a onclick="showImprintPopUp()">Impressum</a></div>
+    <div onclick="showprivacypolicypopup()"><a onclick="showprivacypolicypopup()">Datenschutzerklärung</a></div>
+    </div>
+     <div class="footer">
         <div class="footer-content-left">
             <p>Zahlungsarten</p>
-            <div>
+            <div class="payment-container">
                 <img src="images/payment/haarstudioaussergewoehnlich+köln+zahlungsarten.png">
             </div>
             <p>&copy; Haarstudio Aussergewoehnlich 2021</p>
@@ -552,217 +570,222 @@
             </div>
             <div class="footer-content-inner-imprint">
                 <div><a onclick="showImprintPopUp()">Impressum</a></div>
-                <div class="imprint-popup-background popup-hidden"></div>
-                <div class="imprint-popup popup-hidden">
-                    <span onclick="closeImprintPopUp()" class="material-icons">close</span>
-                    <h1>Impressum:</h1>
-                    <br>
-                    <h2>Haarstudio Außergewöhnlich</h2>
-                    <br>
-                    <h3>Kerim Kasapoglu</h3>
-                    <br>
-                    <h2>Kontaktdaten:</h2>
-                    <br>
-                    <h3>Anschrift:<br> Longericher Hauptstr. 68<br>
-                        50739 Köln
-                        <br>
-                        Telefon: +49 221 16917854
-                        <br>
-                        E-Mail: info@haarstudio-aussergewoehnlich.de
-                        <br>
-                        Verantwortlicher / Verantwortliche für journalistisch-redaktionelle Texte:
-                        Kerim Kasapoglu
-                    </h3>
-                    <br>
-                    <h2>Berufsrechtliche Regelungen:</h2>
-                    <br>
-                    <h3>Name: Kerim Kasapoglu
-                        <br>
-                        Berufsbezeichnung: Friseur / Friseurin
-                        <br>
-                        verliehen in Köln
-                        <br>
-                        Berufsrechtliche Regelung: Handwerksordnung
-                        <br>
-                        Zuständige Aufsichtsbehörde: Handwerkskammer
-                        <br>
-                        Plattform der EU-Kommission zur Online-Streitbeilegung:
-                        <br>
-                        www.ec.europa.eu/consumers/odr
-                    </h3>
-                </div>
                 <div><a onclick="showprivacypolicypopup()">Datenschutzerklärung</a></div>
-                <div class="privacy-policy-popup-background popup-hidden"></div>
-                <div class="privacy-policy-popup popup-hidden">
-                    <span onclick="closeprivacypolicypopup()" class="material-icons">close</span>
-                    <br>
-                    <h1>Datenschutz­erklärung</h1>
-                    <br>
-                    Wir sind uns darüber bewusst, dass Ihnen der Schutz Ihrer Privatsphäre bei der Benutzung unserer
-                    Website ein wichtiges Anliegen ist. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst.
-                    Deshalb möchten wir, dass Sie wissen, wann wir welche Daten speichern und wie wir sie verwenden. Wir
-                    möchten Sie mit dieser Datenschutzerklärung über unsere Maßnahmen zum Datenschutz in Kenntnis
-                    setzen.
-                    <br>
-                    <br>
-                    <h1>Erhebung personenbezogener Daten</h1>
-                    <br>
-                    Im Folgenden informieren wir über die Erhebung personenbezogener Daten bei Nutzung unserer Website.
-                    Personenbezogene Daten sind alle Daten, die direkt oder indirekt auf Sie persönlich beziehbar sind,
-                    z. B. Name, Adresse, E-Mail-Adressen, Nutzerverhalten.
-                    Wir verarbeiten Daten gemäß DS-GVO Art. 6 Abs. 1 lit. a) b) c) f). Das bedeutet, dass wir
-                    personenbezogene Daten nur verarbeiten, wenn eine Einwilligung vorliegt (lit. a), soweit zur
-                    Erfüllung eines Vertrages oder vorvertraglicher Maßnahmen erforderlich (lit. b), wir rechtlich dazu
-                    verpflichtet sind (lit. c) oder wir ein berechtigtes Interesse an der Verarbeitung haben (lit. f).
-                    Die entsprechende Rechtsgrundlage wird im Einzelfall benannt.
-                    Bei Ihrer Kontaktaufnahme mit uns per E-Mail oder über ein Kontaktformular werden die von Ihnen
-                    mitgeteilten Daten (Ihre E-Mail-Adresse, ggf. Ihr Name und Ihre Telefonnummer) von uns gespeichert,
-                    um Ihre Fragen zu beantworten. Die in diesem Zusammenhang anfallenden Daten löschen wir, nachdem der
-                    Zweck der Anfrage entfallen ist. Je nach Art der Anfrage erheben wir diese Daten mit Ihrer
-                    ausdrücklichen Einwilligung gem. Art. 6 Abs. 1 lit. a) DSGVO, zur Abwicklung und Erfüllung eines
-                    Vertrages oder vorvertraglicher Maßnahmen gem. Art. 6 Abs. 1 lit. b) DS-GVO oder bei einem
-                    berechtigten Interesse gem. Art. 6 Abs. 1 lit. f) DSGVO. Das berechtigte Interesse liegt dabei
-                    darin, Anfragen zu beantworten und über unsere Produkte und Dienstleistungen zu informieren.
-                    Bei der ausschließlich informatorischen Nutzung der Website, also wenn Sie sich nicht registrieren
-                    oder uns anderweitig Informationen übermitteln, werden nur die Daten erhoben, die Ihr Browser an den
-                    von uns genutzten Server übermittelt. Wenn Sie unsere Website betrachten möchten, werden die
-                    folgenden Daten erhoben, die für uns technisch erforderlich sind, um Ihnen unsere Website anzuzeigen
-                    und die Stabilität und Sicherheit zu gewährleisten. Die Weiterleitung erfolgt automatisiert durch
-                    Ihren Browser und ist bei der Nutzung des Internets diesem inhärent. (Rechtsgrundlage ist Art. 6
-                    Abs. 1 lit. f DS-GVO):
-                    <br>
-                    <br>
-                    <h1>IP-Adresse</h1>
-                    <br>
-                    Datum und Uhrzeit der Anfrage
-                    Zeitzonendifferenz zur Greenwich Mean Time (GMT)
-                    Inhalt der Anforderung (konkrete Seite)
-                    Zugriffsstatus/HTTP-Statuscode
-                    jeweils übertragene Datenmenge
-                    Website, von der die Anforderung kommt
-                    Browser
-                    Betriebssystem und dessen Oberfläche
-                    Sprache und Version der Browsersoftware.
-                    Verantwortlicher
-                    Den Verantwortlichen gem. Art. 4 Nr. 7 EU-Datenschutz-Grundverordnung (DS-GVO) entnehmen Sie bitte
-                    dem Impressum.
-                    <br>
-                    <br>
-                    <h1>Verwendungszwecke</h1>
-                    <br>
-                    Die von Ihnen erfassten persönlichen Daten werden wir nur dazu verwenden, Ihnen die gewünschten
-                    Produkte oder Dienstleistungen bereitzustellen, oder aber zu anderen Zwecken, für die Sie Ihre
-                    Einwilligung erteilt haben, sofern keine anderslautenden gesetzlichen Verpflichtungen bestehen.
-                    <br>
-                    <br>
-                    <h1>Betroffenenrechte</h1>
-                    <br>
-                    Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:
-                    <br>
-                    Recht auf Auskunft,
-                    Recht auf Berichtigung oder Löschung,
-                    Recht auf Einschränkung der Verarbeitung,
-                    Recht auf Widerspruch gegen die Verarbeitung,
-                    Recht auf Datenübertragbarkeit.
-                    Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer
-                    personenbezogenen Daten durch uns zu beschweren.
-                    Recht auf Widerruf oder Widerspruch gegen die Verarbeitung Ihrer Daten
-                    Falls Sie eine Einwilligung zur Verarbeitung Ihrer Daten erteilt haben, können Sie diese jederzeit
-                    widerrufen. Ein solcher Widerruf beeinflusst die Zulässigkeit der Verarbeitung Ihrer
-                    personenbezogenen Daten, nachdem Sie ihn gegenüber uns ausgesprochen haben.
-                    <br>
-                    <br>
-                    <h1>Aufbewahrung von Daten</h1>
-                    <br>
-                    Wir speichern personenbezogene Daten, solange dies zur Erfüllung unserer vertraglichen sowie vor-
-                    und nachvertraglichen Verpflichtungen erforderlich ist. Dies berührt nicht Ihr Recht auf Löschung
-                    oder Einschränkung der Verarbeitung. Außerdem wird dadurch nicht unser Recht berührt die Daten bei
-                    rechtlich zwingenden Gründen (Art. 6 Abs. 1 lit. c) DS-GVO) oder bei Vorliegen eines berechtigten
-                    Interesses (Art. 6 Abs. 1 lit. b) DS-GVO) weiterhin zu speichern. Als berechtigtes Interesse kommen
-                    insbesondere das Prüfen und Durchsetzen von Schadensersatz- und anderen Ansprüchen in Betracht.
-                    Logdateien, die zur Stabilität und Sicherheit des Systems erforderlich sind werden nach vier Tagen
-                    automatisiert gelöscht.
-                    <br>
-                    <br>
-                    <h1>Einsatz von Cookies</h1>
-                    <br>
-                    Zusätzlich zu den zuvor genannten Daten werden bei Ihrer Nutzung unserer Website Cookies auf Ihrem
-                    Rechner gespeichert. Bei Cookies handelt es sich um kleine Textdateien, die auf Ihrer Festplatte dem
-                    von Ihnen verwendeten Browser zugeordnet gespeichert werden und durch welche der Stelle, die den
-                    Cookie setzt (hier durch uns), bestimmte Informationen zufließen. Cookies können keine Programme
-                    ausführen oder Viren auf Ihren Computer übertragen. Sie dienen dazu, das Internetangebot insgesamt
-                    nutzerfreundlicher und effektiver zu machen.
-                    <br>
-                    Diese Website nutzt folgende Arten von Cookies, deren Umfang und Funktionsweise im Folgenden
-                    erläutert werden:
-                    Transiente Cookies (dazu b)
-                    Persistente Cookies (dazu c).
-                    Transiente Cookies werden automatisiert gelöscht, wenn Sie den Browser schließen. Dazu zählen
-                    insbesondere die Session-Cookies. Diese speichern eine sogenannte Session-ID, mit welcher sich
-                    verschiedene Anfragen Ihres Browsers der gemeinsamen Sitzung zuordnen lassen. Dadurch kann Ihr
-                    Rechner wiedererkannt werden, wenn Sie auf unsere Website zurückkehren. Die Session-Cookies werden
-                    gelöscht, wenn Sie sich ausloggen oder den Browser schließen.
-                    Persistente Cookies werden automatisiert nach einer vorgegebenen Dauer gelöscht, die sich je nach
-                    Cookie unterscheiden kann. Sie können die Cookies in den Sicherheitseinstellungen Ihres Browsers
-                    jederzeit löschen.
-                    Sie können Ihre Browser-Einstellung entsprechend Ihren Wünschen konfigurieren und z. B. die Annahme
-                    von Third-Party-Cookies oder allen Cookies ablehnen. Wir weisen Sie darauf hin, dass Sie eventuell
-                    nicht alle Funktionen dieser Website nutzen können.
-                    Sicherheit
-                    Wir setzen technische und organisatorische Sicherheitsmaßnahmen ein, um Ihre zur Verfügung
-                    gestellten Daten durch zufällige oder vorsätzliche Manipulation, Verlust, Zerstörung oder Zugriff
-                    unberechtigter Personen zu schützen. Im Falle der Erhebung und Verarbeitung persönlicher Daten
-                    werden die Informationen in verschlüsselter Form übertragen, um einem Missbrauch der Daten durch
-                    Dritte vorzubeugen. Unsere Sicherungsmaßnahmen werden entsprechend der technologischen Entwicklung
-                    fortlaufend überarbeitet.
-                    <br>
-                    <br>
-                    <h1>Anpassungen</h1>
-                    <br>
-                    Die ständige Entwicklung des Internets macht von Zeit zu Zeit Anpassungen unserer
-                    Datenschutzerklärung erforderlich. Wir behalten uns vor, jederzeit entsprechende Änderungen
-                    vorzunehmen.
-                    <br>
-                    <h1>Nutzungsstatistik</h1>
-                    <br>
-                    Beim Besuch unserer Seite wird von uns anonymisiert erfasst, auf welchem Weg die Besucher zu unserer
-                    Webseite gekommen sind und wie viele Nutzer die Seite aufgerufen haben. (Suchmaschine, Verlinkung,
-                    direkte Eingabe oder Werbemaßnahmen) Die Daten werden nicht dazu genutzt einzelne Besucher zu
-                    identifizieren, sondern ausschließlich zur Übermittlung quantitativer Größen. Die Statistik kann
-                    nicht dazu genutzt werden ihr Verhalten auf anderen Webseiten nachzuvollziehen. Die Daten werden
-                    nicht mit anderen Diensten verknüpft. Wenn Sie das Setzen von Cookies in Ihrem Browser deaktiviert
-                    haben, werden Ihre Besuche nicht erfasst. Ansonsten werden diese Cookies nach sieben Tagen
-                    automatisiert gelöscht.
-                    <br>
-                    <br>
-                    <h1>Inhalte Dritter auf der Webseite</h1>
-                    <br>
-                    Unser Internetauftritt integriert Inhalte anderer Anbieter. Dies können reine Content-Elemente (z.B.
-                    Nachrichten, Neuigkeiten), aber auch Widgets (Funktionen wie z.B. Buchungssysteme) oder z.B.
-                    Schriften und technische Bibliotheken sein. Dazu gehören auch Google Fonts. Aus technischen Gründen
-                    erfolgt dies, indem diese Inhalte vom Browser von anderen Servern geladen werden. In diesem
-                    Zusammenhang werden die aktuell von Ihrem Browser verwendete IP und der verwendete Browser des
-                    anfragenden Systems übermittelt. Bitte beachten Sie diesbezüglich die jeweiligen
-                    Datenschutzerklärungen der Drittanbieter.
-                    <br>
-                    <br>
-                    <h1>Routenplaner</h1>
-                    <br>
-                    Wir verwenden Google Maps von Google auf unserer Webseite, um Ihnen einen interaktiven Routenplaner
-                    zur Verfügung zu stellen. Beim Nutzen dieses Service erklären Sie sich damit einverstanden, dass
-                    Daten gemäß der Google Maps Nutzungsbedingungen (https://www.google.com/intl/de_de/help/terms_maps/)
-                    verarbeitet werden.
-                    Sofern Sie die Karte nutzen, z.B. durch Anklicken unserer dort aufgeführten Standorte, erfassen wir
-                    von Ihnen keinerlei Daten. Ggf. erfasst jedoch das Unternehmen Alphabbet Inc. 
-                    im Rahmen von Google Maps personenbezogene oder personenbeziehbare
-                    Daten. Wir können nicht beeinflussen welche Daten Google mit Google Maps erfasst, noch wie
-                    Google diese verarbeitet und auswertet. Bitte beachten Sie deswegen die Nutzungsbedingungen für
-                    Google Maps, abrufbar unter https://www.google.com/intl/de_de/help/terms_maps/
-                    <br>
-                    <br>
-                </div>
             </div>
         </div>
+    </div>
+
+        <div class="imprint-popup-background popup-hidden"></div>
+        <div class="imprint-popup popup-hidden">
+            <span onclick="closeImprintPopUp()" class="material-icons">close</span>
+            <h1>Impressum:</h1>
+            <br>
+            <h2>Haarstudio Außergewöhnlich</h2>
+            <br>
+            <h3>Kerim Kasapoglu</h3>
+            <br>
+            <h2>Kontaktdaten:</h2>
+            <br>
+            <h3>Anschrift:<br> Longericher Hauptstr. 68<br>
+                50739 Köln
+                <br>
+                Telefon: +49 221 16917854
+                <br>
+                E-Mail: info@haarstudio-aussergewoehnlich.de
+                <br>
+                Verantwortlicher / Verantwortliche für journalistisch-redaktionelle Texte:
+                Kerim Kasapoglu
+            </h3>
+            <br>
+            <h2>Berufsrechtliche Regelungen:</h2>
+            <br>
+            <h3>Name: Kerim Kasapoglu
+                <br>
+                Berufsbezeichnung: Friseur / Friseurin
+                <br>
+                verliehen in Köln
+                <br>
+                Berufsrechtliche Regelung: Handwerksordnung
+                <br>
+                Zuständige Aufsichtsbehörde: Handwerkskammer
+                <br>
+                Plattform der EU-Kommission zur Online-Streitbeilegung:
+                <br>
+                www.ec.europa.eu/consumers/odr
+            </h3>
+        </div>
+
+    <div class="privacy-policy-popup-background popup-hidden"></div>
+        <div class="privacy-policy-popup popup-hidden">
+            <span onclick="closeprivacypolicypopup()" class="material-icons">close</span>
+            <br>
+            <h1>Datenschutz­erklärung</h1>
+            <br>
+            Wir sind uns darüber bewusst, dass Ihnen der Schutz Ihrer Privatsphäre bei der Benutzung unserer
+            Website ein wichtiges Anliegen ist. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst.
+            Deshalb möchten wir, dass Sie wissen, wann wir welche Daten speichern und wie wir sie verwenden. Wir
+            möchten Sie mit dieser Datenschutzerklärung über unsere Maßnahmen zum Datenschutz in Kenntnis
+            setzen.
+            <br>
+            <br>
+            <h1>Erhebung personenbezogener Daten</h1>
+            <br>
+            Im Folgenden informieren wir über die Erhebung personenbezogener Daten bei Nutzung unserer Website.
+            Personenbezogene Daten sind alle Daten, die direkt oder indirekt auf Sie persönlich beziehbar sind,
+            z. B. Name, Adresse, E-Mail-Adressen, Nutzerverhalten.
+            Wir verarbeiten Daten gemäß DS-GVO Art. 6 Abs. 1 lit. a) b) c) f). Das bedeutet, dass wir
+            personenbezogene Daten nur verarbeiten, wenn eine Einwilligung vorliegt (lit. a), soweit zur
+            Erfüllung eines Vertrages oder vorvertraglicher Maßnahmen erforderlich (lit. b), wir rechtlich dazu
+            verpflichtet sind (lit. c) oder wir ein berechtigtes Interesse an der Verarbeitung haben (lit. f).
+            Die entsprechende Rechtsgrundlage wird im Einzelfall benannt.
+            Bei Ihrer Kontaktaufnahme mit uns per E-Mail oder über ein Kontaktformular werden die von Ihnen
+            mitgeteilten Daten (Ihre E-Mail-Adresse, ggf. Ihr Name und Ihre Telefonnummer) von uns gespeichert,
+            um Ihre Fragen zu beantworten. Die in diesem Zusammenhang anfallenden Daten löschen wir, nachdem der
+            Zweck der Anfrage entfallen ist. Je nach Art der Anfrage erheben wir diese Daten mit Ihrer
+            ausdrücklichen Einwilligung gem. Art. 6 Abs. 1 lit. a) DSGVO, zur Abwicklung und Erfüllung eines
+            Vertrages oder vorvertraglicher Maßnahmen gem. Art. 6 Abs. 1 lit. b) DS-GVO oder bei einem
+            berechtigten Interesse gem. Art. 6 Abs. 1 lit. f) DSGVO. Das berechtigte Interesse liegt dabei
+            darin, Anfragen zu beantworten und über unsere Produkte und Dienstleistungen zu informieren.
+            Bei der ausschließlich informatorischen Nutzung der Website, also wenn Sie sich nicht registrieren
+            oder uns anderweitig Informationen übermitteln, werden nur die Daten erhoben, die Ihr Browser an den
+            von uns genutzten Server übermittelt. Wenn Sie unsere Website betrachten möchten, werden die
+            folgenden Daten erhoben, die für uns technisch erforderlich sind, um Ihnen unsere Website anzuzeigen
+            und die Stabilität und Sicherheit zu gewährleisten. Die Weiterleitung erfolgt automatisiert durch
+            Ihren Browser und ist bei der Nutzung des Internets diesem inhärent. (Rechtsgrundlage ist Art. 6
+            Abs. 1 lit. f DS-GVO):
+            <br>
+            <br>
+            <h1>IP-Adresse</h1>
+            <br>
+            Datum und Uhrzeit der Anfrage
+            Zeitzonendifferenz zur Greenwich Mean Time (GMT)
+            Inhalt der Anforderung (konkrete Seite)
+            Zugriffsstatus/HTTP-Statuscode
+            jeweils übertragene Datenmenge
+            Website, von der die Anforderung kommt
+            Browser
+            Betriebssystem und dessen Oberfläche
+            Sprache und Version der Browsersoftware.
+            Verantwortlicher
+            Den Verantwortlichen gem. Art. 4 Nr. 7 EU-Datenschutz-Grundverordnung (DS-GVO) entnehmen Sie bitte
+            dem Impressum.
+            <br>
+            <br>
+            <h1>Verwendungszwecke</h1>
+            <br>
+            Die von Ihnen erfassten persönlichen Daten werden wir nur dazu verwenden, Ihnen die gewünschten
+            Produkte oder Dienstleistungen bereitzustellen, oder aber zu anderen Zwecken, für die Sie Ihre
+            Einwilligung erteilt haben, sofern keine anderslautenden gesetzlichen Verpflichtungen bestehen.
+            <br>
+            <br>
+            <h1>Betroffenenrechte</h1>
+            <br>
+            Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:
+            <br>
+            Recht auf Auskunft,
+            Recht auf Berichtigung oder Löschung,
+            Recht auf Einschränkung der Verarbeitung,
+            Recht auf Widerspruch gegen die Verarbeitung,
+            Recht auf Datenübertragbarkeit.
+            Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer
+            personenbezogenen Daten durch uns zu beschweren.
+            Recht auf Widerruf oder Widerspruch gegen die Verarbeitung Ihrer Daten
+            Falls Sie eine Einwilligung zur Verarbeitung Ihrer Daten erteilt haben, können Sie diese jederzeit
+            widerrufen. Ein solcher Widerruf beeinflusst die Zulässigkeit der Verarbeitung Ihrer
+            personenbezogenen Daten, nachdem Sie ihn gegenüber uns ausgesprochen haben.
+            <br>
+            <br>
+            <h1>Aufbewahrung von Daten</h1>
+            <br>
+            Wir speichern personenbezogene Daten, solange dies zur Erfüllung unserer vertraglichen sowie vor-
+            und nachvertraglichen Verpflichtungen erforderlich ist. Dies berührt nicht Ihr Recht auf Löschung
+            oder Einschränkung der Verarbeitung. Außerdem wird dadurch nicht unser Recht berührt die Daten bei
+            rechtlich zwingenden Gründen (Art. 6 Abs. 1 lit. c) DS-GVO) oder bei Vorliegen eines berechtigten
+            Interesses (Art. 6 Abs. 1 lit. b) DS-GVO) weiterhin zu speichern. Als berechtigtes Interesse kommen
+            insbesondere das Prüfen und Durchsetzen von Schadensersatz- und anderen Ansprüchen in Betracht.
+            Logdateien, die zur Stabilität und Sicherheit des Systems erforderlich sind werden nach vier Tagen
+            automatisiert gelöscht.
+            <br>
+            <br>
+            <h1>Einsatz von Cookies</h1>
+            <br>
+            Zusätzlich zu den zuvor genannten Daten werden bei Ihrer Nutzung unserer Website Cookies auf Ihrem
+            Rechner gespeichert. Bei Cookies handelt es sich um kleine Textdateien, die auf Ihrer Festplatte dem
+            von Ihnen verwendeten Browser zugeordnet gespeichert werden und durch welche der Stelle, die den
+            Cookie setzt (hier durch uns), bestimmte Informationen zufließen. Cookies können keine Programme
+            ausführen oder Viren auf Ihren Computer übertragen. Sie dienen dazu, das Internetangebot insgesamt
+            nutzerfreundlicher und effektiver zu machen.
+            <br>
+            Diese Website nutzt folgende Arten von Cookies, deren Umfang und Funktionsweise im Folgenden
+            erläutert werden:
+            Transiente Cookies (dazu b)
+            Persistente Cookies (dazu c).
+            Transiente Cookies werden automatisiert gelöscht, wenn Sie den Browser schließen. Dazu zählen
+            insbesondere die Session-Cookies. Diese speichern eine sogenannte Session-ID, mit welcher sich
+            verschiedene Anfragen Ihres Browsers der gemeinsamen Sitzung zuordnen lassen. Dadurch kann Ihr
+            Rechner wiedererkannt werden, wenn Sie auf unsere Website zurückkehren. Die Session-Cookies werden
+            gelöscht, wenn Sie sich ausloggen oder den Browser schließen.
+            Persistente Cookies werden automatisiert nach einer vorgegebenen Dauer gelöscht, die sich je nach
+            Cookie unterscheiden kann. Sie können die Cookies in den Sicherheitseinstellungen Ihres Browsers
+            jederzeit löschen.
+            Sie können Ihre Browser-Einstellung entsprechend Ihren Wünschen konfigurieren und z. B. die Annahme
+            von Third-Party-Cookies oder allen Cookies ablehnen. Wir weisen Sie darauf hin, dass Sie eventuell
+            nicht alle Funktionen dieser Website nutzen können.
+            Sicherheit
+            Wir setzen technische und organisatorische Sicherheitsmaßnahmen ein, um Ihre zur Verfügung
+            gestellten Daten durch zufällige oder vorsätzliche Manipulation, Verlust, Zerstörung oder Zugriff
+            unberechtigter Personen zu schützen. Im Falle der Erhebung und Verarbeitung persönlicher Daten
+            werden die Informationen in verschlüsselter Form übertragen, um einem Missbrauch der Daten durch
+            Dritte vorzubeugen. Unsere Sicherungsmaßnahmen werden entsprechend der technologischen Entwicklung
+            fortlaufend überarbeitet.
+            <br>
+            <br>
+            <h1>Anpassungen</h1>
+            <br>
+            Die ständige Entwicklung des Internets macht von Zeit zu Zeit Anpassungen unserer
+            Datenschutzerklärung erforderlich. Wir behalten uns vor, jederzeit entsprechende Änderungen
+            vorzunehmen.
+            <br>
+            <h1>Nutzungsstatistik</h1>
+            <br>
+            Beim Besuch unserer Seite wird von uns anonymisiert erfasst, auf welchem Weg die Besucher zu unserer
+            Webseite gekommen sind und wie viele Nutzer die Seite aufgerufen haben. (Suchmaschine, Verlinkung,
+            direkte Eingabe oder Werbemaßnahmen) Die Daten werden nicht dazu genutzt einzelne Besucher zu
+            identifizieren, sondern ausschließlich zur Übermittlung quantitativer Größen. Die Statistik kann
+            nicht dazu genutzt werden ihr Verhalten auf anderen Webseiten nachzuvollziehen. Die Daten werden
+            nicht mit anderen Diensten verknüpft. Wenn Sie das Setzen von Cookies in Ihrem Browser deaktiviert
+            haben, werden Ihre Besuche nicht erfasst. Ansonsten werden diese Cookies nach sieben Tagen
+            automatisiert gelöscht.
+            <br>
+            <br>
+            <h1>Inhalte Dritter auf der Webseite</h1>
+            <br>
+            Unser Internetauftritt integriert Inhalte anderer Anbieter. Dies können reine Content-Elemente (z.B.
+            Nachrichten, Neuigkeiten), aber auch Widgets (Funktionen wie z.B. Buchungssysteme) oder z.B.
+            Schriften und technische Bibliotheken sein. Dazu gehören auch Google Fonts. Aus technischen Gründen
+            erfolgt dies, indem diese Inhalte vom Browser von anderen Servern geladen werden. In diesem
+            Zusammenhang werden die aktuell von Ihrem Browser verwendete IP und der verwendete Browser des
+            anfragenden Systems übermittelt. Bitte beachten Sie diesbezüglich die jeweiligen
+            Datenschutzerklärungen der Drittanbieter.
+            <br>
+            <br>
+            <h1>Routenplaner</h1>
+            <br>
+            Wir verwenden Google Maps von Google auf unserer Webseite, um Ihnen einen interaktiven Routenplaner
+            zur Verfügung zu stellen. Beim Nutzen dieses Service erklären Sie sich damit einverstanden, dass
+            Daten gemäß der Google Maps Nutzungsbedingungen (https://www.google.com/intl/de_de/help/terms_maps/)
+            verarbeitet werden.
+            Sofern Sie die Karte nutzen, z.B. durch Anklicken unserer dort aufgeführten Standorte, erfassen wir
+            von Ihnen keinerlei Daten. Ggf. erfasst jedoch das Unternehmen Alphabbet Inc. 
+            im Rahmen von Google Maps personenbezogene oder personenbeziehbare
+            Daten. Wir können nicht beeinflussen welche Daten Google mit Google Maps erfasst, noch wie
+            Google diese verarbeitet und auswertet. Bitte beachten Sie deswegen die Nutzungsbedingungen für
+            Google Maps, abrufbar unter https://www.google.com/intl/de_de/help/terms_maps/
+            <br>
+            <br>
+        </div>
+
+
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
         <script>
@@ -775,6 +798,7 @@
                     height: '30rem',
                     rewind: true,
                     cover: true,
+                    gap: "1em",
                     breakpoints: {
                         1100: {
                             height: '25rem',
@@ -798,6 +822,39 @@
                     height: '30rem',
                     cover: true,
                     rewind: true,
+                    gap: "1em",
+                    breakpoints: {
+                        1100: {
+                            height: '25rem',
+                        },
+                        763: {
+                            height: '15rem',
+                        },
+                        597: {
+                            perPage: 2,
+                            height: '15rem',
+                        },
+                        407: {
+                            perPage: 1,
+                            height: '15rem',
+                        },
+                    }
+                }).mount();
+            });
+
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+                new Splide('#splide-service', {
+                    perPage: 3,
+                    width: '90%',
+                    margin: '5%',
+                    height: '30rem',
+                    cover: true,
+                    rewind: true,
+                    gap: "1em",
+                    arrows: false,
+                    pagination: false,
                     breakpoints: {
                         1100: {
                             height: '25rem',
@@ -838,25 +895,31 @@
             function showImprintPopUp() {
                 document.getElementsByClassName("imprint-popup-background")[0].classList.remove("popup-hidden");
                 document.getElementsByClassName("imprint-popup")[0].classList.remove("popup-hidden");
+                console.log("Test-1");
             }
 
             function closeImprintPopUp() {
                 document.getElementsByClassName("imprint-popup-background")[0].classList.add("popup-hidden");
                 document.getElementsByClassName("imprint-popup")[0].classList.add("popup-hidden");
+                console.log("Test0");
             }
 
             function showprivacypolicypopup() {
                 document.getElementsByClassName("privacy-policy-popup-background")[0].classList.remove("popup-hidden");
                 document.getElementsByClassName("privacy-policy-popup")[0].classList.remove("popup-hidden");
+                console.log("Test1");
             }
             
             function closeprivacypolicypopup() {
                 document.getElementsByClassName("privacy-policy-popup-background")[0].classList.add("popup-hidden");
                 document.getElementsByClassName("privacy-policy-popup")[0].classList.add("popup-hidden");
+                console.log("Test2");
             }
+        
 
         </script>
     </div>
+    
 </body>
 
-</html>
+</html> 

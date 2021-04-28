@@ -17,7 +17,6 @@ img {
 
 body {
     background-color: #1A191E;
-    overflow-x: hidden;
     
 }
 
@@ -118,6 +117,10 @@ body {
     transition: 0.5s ease-in-out;
 }
 
+.mobile-nav a:hover + .mobile-nav {
+    right: -100%;
+}
+
 .close-icon {
     position: absolute;
     right: 20px;
@@ -134,7 +137,7 @@ body {
     font-weight: bold;
 }
 
-.slider {
+.landing {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +150,7 @@ body {
     background-size: cover;
 }
 
-.slider-inner {
+.landing-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,14 +158,14 @@ body {
     margin: 20px 0;
 }
 
-.slider-inner h1 {
+.landing-inner h1 {
     text-align: center;
     color: #fff;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.slider-inner a {
+.landing-inner a {
     padding: 20px 100px;
     border: solid 2px;
     border-color: #fff;
@@ -172,7 +175,7 @@ body {
     transition: 0.5s;
 }
 
-.slider-inner a:hover {
+.landing-inner a:hover {
     background-color: #fff;
     color: #1A191E;
 }
@@ -181,8 +184,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0,0,0,0.7);
     z-index: 9999;
 }
@@ -216,6 +219,12 @@ body {
     pointer-events: none;
     transition: 0.0s;
     transform: translate(-50%, -50%) scale(0.4);
+}
+
+@media only screen and (max-width: 661px) {
+    .newsha-popup {
+        width: 60%;
+    }
 }
 
 .options-menu-newsha {
@@ -259,17 +268,28 @@ body {
     width: 100%;
     text-align: center;
     color: #fff;
+    margin-bottom: 100px;
 }
 
 .services {
-    display: flex !important;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+#splide-service-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .service-container {
+    display: inline-block;
     width: 300px !important;
-    min-height: 380px!important;
+    min-height: 390px!important;
     height: auto;
-    margin: 20px 100px !important;
     border: solid 3px;
     border-color: #fff;
 }
@@ -552,7 +572,7 @@ body {
 }
 
 .newsha-container h2 {
-    width: 500px;
+    width: 100%;
     text-align: center;
     margin-top: 20px;
 }
@@ -796,6 +816,7 @@ body {
 .footer .footer-content-left p {
     margin-bottom: 20px;
     font-weight: bold;
+    width: 100%;
 }
 
 .footer .footer-content-left div {
@@ -816,6 +837,20 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 60px;
+}
+
+@media only screen and (max-width: 375px) {
+    .footer .footer-content-right .footer-content-inner {
+        margin: 0 20%;
+    }
+
+    .payment-container {
+        width: 100%;
+    }
+
+    .footer-content-left {
+        width: 100% !important;
+    }
 }
 
 .footer .footer-content-right .footer-content-inner .img-container {
@@ -865,6 +900,7 @@ body {
     width: 700px;
     min-height: 500px;
     height: auto;
+    overflow-y: scroll;
     background-color: #1A191E;
     z-index: 999999;
     text-align: left;
@@ -878,7 +914,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
-    z-index: 9999;
+    z-index: 999999;
 }
 
 .privacy-policy-popup {
@@ -891,14 +927,44 @@ body {
     min-height: 500px;
     overflow-y: scroll;
     background-color: #1A191E;
-    z-index: 999999;
+    z-index: 9999999;
     text-align: left;
     padding: 30px;
 }
 
+@media only screen and (max-width: 661px) {
+    .privacy-policy-popup {
+        width: 80%;
+        height: 300px;
+    }
+
+    .imprint-popup {
+        width: 60%;
+        height: 300px;
+    }
+}
+
 @media only screen and (max-width: 667px) {
     .footer {
-        flex-direction: column;
-        padding: 20px 0;
+        display: none;
     }
+
+    .mobile-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #1A191E;;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .mobile-footer div {
+        margin: 10px 0;
+    }
+
+    .socials-mobile {
+        flex-direction: row !important;
+    }
+
 }
