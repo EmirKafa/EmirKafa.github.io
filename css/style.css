@@ -227,6 +227,19 @@ body {
     }
 }
 
+
+@media only screen and (max-width: 567px) {
+    .newsha-popup {
+        width: 80%;
+    }
+
+    .newsha-popup p {
+        text-align: center;
+    }
+}
+
+
+
 .options-menu-newsha {
     display: flex;
     flex-direction: column;
