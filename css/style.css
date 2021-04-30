@@ -957,6 +957,11 @@ body {
     }
 }
 
+
+.mobile-footer {
+    display: none;
+}
+
 @media only screen and (max-width: 667px) {
     .footer {
         display: none;
